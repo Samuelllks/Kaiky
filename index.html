@@ -314,6 +314,57 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:4rem 2rem;text-align:c
 <main>
 
 <!-- HERO -->
+<style>
+  .btn-anime-launch {
+    background: linear-gradient(45deg, #ff4757, #ff6b81) !important;
+    color: white !important;
+    border: none !important;
+    position: relative;
+    overflow: visible !important;
+    box-shadow: 0 0 20px rgba(255, 71, 87, 0.4);
+    animation: animePulse 2s infinite;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .btn-anime-launch:hover {
+    transform: scale(1.05) translateY(-2px);
+    filter: brightness(1.1);
+  }
+
+  .launch-badge {
+    position: absolute;
+    top: -12px;
+    right: -8px;
+    background: #ffffff;
+    color: #ff4757;
+    font-size: 10px;
+    font-weight: 900;
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    border: 2px solid #ff4757;
+    animation: bounceLaunch 0.5s infinite alternate;
+  }
+
+  @keyframes animePulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 71, 87, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
+  }
+
+  @keyframes bounceLaunch {
+    from { transform: translateY(0); }
+    to { transform: translateY(-3px); }
+  }
+</style>
+
 <section id="hero">
   <div class="hero-rings">
     <div class="ring ring1"></div>
@@ -331,71 +382,24 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:4rem 2rem;text-align:c
   </div>
   <p class="hero-sub">Animação 2D &nbsp;·&nbsp; Arte Digital &nbsp;·&nbsp; Storytelling Visual</p>
   <p class="hero-desc">Dando vida a personagens e histórias há 5 anos. Criação autoral, traços únicos e animações que prendem o olhar.</p>
+  
   <div class="btn-group">
+    <a href="https://samuelllks.github.io/Anime-em-caos/" class="btn btn-anime-launch ripple-btn">
+      <i class="fa-solid fa-dna"></i>
+      <span>Anime em Caos</span>
+      <div class="launch-badge">Novo</div>
+    </a>
+
     <a href="#portfolio" class="btn btn-primary ripple-btn"><i class="fa-solid fa-play"></i><span>Ver Trabalhos</span></a>
     <a href="https://www.instagram.com/k4iky_18" target="_blank" class="btn btn-secondary ripple-btn"><i class="fa-brands fa-instagram"></i><span>Seguir no Insta</span></a>
     <a href="#about" class="btn btn-icon ripple-btn"><i class="fa-solid fa-user"></i></a>
   </div>
+
   <div class="scroll-ind">
     <div class="scroll-line"></div>
     <span>Scroll</span>
   </div>
 </section>
-
-<!-- TICKER -->
-<div class="ticker-wrap">
-  <div class="ticker">
-    <span class="ticker-item ti-neon">ANIMAÇÃO 2D <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-cyan">ARTE DIGITAL <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-gold">K4IKY <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-purple">5 ANOS DE TRAÇO <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-blue">PERSONAGENS <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-lime">STORYTELLING VISUAL <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-pink">VFX 2D <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-neon">FRAME BY FRAME <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-cyan">ANIMAÇÃO 2D <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-gold">ARTE DIGITAL <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-purple">K4IKY <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-blue">5 ANOS DE TRAÇO <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-lime">PERSONAGENS <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-pink">STORYTELLING VISUAL <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-neon">VFX 2D <i class="fa-solid fa-star"></i></span>
-    <span class="ticker-item ti-cyan">FRAME BY FRAME <i class="fa-solid fa-star"></i></span>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-visual reveal">
-    <div class="about-frame">
-      <div class="scan-line"></div>
-      <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
-      <div class="corner corner-bl"></div><div class="corner corner-br"></div>
-      <div class="about-frame-inner">
-        <div class="avatar-icon"><i class="fa-solid fa-paintbrush"></i></div>
-        <div class="frame-tag">@k4iky_18</div>
-      </div>
-    </div>
-    <div class="about-stats">
-      <div class="stat-card"><div class="stat-num" data-target="5">0</div><div class="stat-label">Anos criando</div></div>
-      <div class="stat-card"><div class="stat-num">2D</div><div class="stat-label">Especialidade</div></div>
-      <div class="stat-card"><div class="stat-num">∞</div><div class="stat-label">Histórias pra contar</div></div>
-      <div class="stat-card"><div class="stat-num" data-target="5">0</div><div class="stat-label">Parceiros criativos</div></div>
-    </div>
-  </div>
-  <div class="about-text reveal rd2">
-    <div class="section-label"><i class="fa-solid fa-user"></i> Sobre mim</div>
-    <h2 class="section-title">Arte que <br>respira.</h2>
-    <p>Faz <strong>5 anos</strong> que mergulhei de cabeça no mundo da animação 2D. Cada frame é uma decisão consciente, cada traço carrega intenção. Não é só mover desenhos — é construir mundos.</p>
-    <p>Meu trabalho vive na intersecção entre <strong>design de personagem</strong>, movimento fluido e narrativa visual. Se tem história pra contar, eu animo.</p>
-    <p>Baseado no Brasil, conectado ao mundo. Sempre aberto a <strong>colaborações, projetos e parcerias</strong> que valham o frame.</p>
-    <div style="margin-top:2.2rem;display:flex;gap:.85rem;flex-wrap:wrap">
-      <a href="https://www.instagram.com/k4iky_18" target="_blank" class="btn btn-primary ripple-btn"><i class="fa-brands fa-instagram"></i><span>@k4iky_18</span></a>
-      <a href="#portfolio" class="btn btn-secondary ripple-btn"><i class="fa-solid fa-folder-open"></i><span>Ver Portfólio</span></a>
-    </div>
-  </div>
-</section>
-
 <!-- MINDSET -->
 <section id="mindset">
   <div class="section-label" style="justify-content:center"><i class="fa-solid fa-brain"></i> A Jornada</div>
